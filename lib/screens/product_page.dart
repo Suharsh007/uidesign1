@@ -691,6 +691,794 @@ class _ProductPageState extends State<ProductPage> {
                   ),
                 ],
               ),
+              Container(
+                width: double.infinity,
+                color: Color.fromARGB(255, 243, 231, 245),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Sponsor Ads",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                child: Image.asset(
+                  "assets/images/ad.png",
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 45, 8, 10),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Similar Products Nearby",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                  ),
+                ),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Card(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        2.0, 20, 2, 10),
+                                    child: Image.asset(
+                                      "assets/images/watch.png",
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(6.0),
+                                            child: Text("Donage"),
+                                          ),
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            borderRadius:
+                                                const BorderRadius.all(
+                                                    const Radius.circular(20)),
+                                          ),
+                                        ),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                                Icons.shopping_cart_outlined)),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Beauty pair swans",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: Text(
+                                            "Women grey regar wish",
+                                            style: TextStyle(fontSize: 10),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: RichText(
+                                            text: const TextSpan(
+                                              children: <TextSpan>[
+                                                TextSpan(
+                                                    text: "₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 214, 210, 210),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 440",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 209, 206, 206),
+                                                      decoration: TextDecoration
+                                                          .lineThrough,
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " ₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromRGBO(
+                                                          158, 158, 158, 1),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 340 ",
+                                                    style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontSize: 12,
+                                                    )),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.share_outlined))
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        2.0, 20, 2, 10),
+                                    child: Image.asset(
+                                      "assets/images/watch.png",
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(6.0),
+                                            child: Text("Donage"),
+                                          ),
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            borderRadius:
+                                                const BorderRadius.all(
+                                                    const Radius.circular(20)),
+                                          ),
+                                        ),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                                Icons.shopping_cart_outlined)),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Beauty pair swans",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: Text(
+                                            "Women grey regar wish",
+                                            style: TextStyle(fontSize: 10),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: RichText(
+                                            text: const TextSpan(
+                                              children: <TextSpan>[
+                                                TextSpan(
+                                                    text: "₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 214, 210, 210),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 440",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 209, 206, 206),
+                                                      decoration: TextDecoration
+                                                          .lineThrough,
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " ₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromRGBO(
+                                                          158, 158, 158, 1),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 340 ",
+                                                    style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontSize: 12,
+                                                    )),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.share_outlined))
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      Card(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        2.0, 20, 2, 10),
+                                    child: Image.asset(
+                                      "assets/images/watch.png",
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(6.0),
+                                            child: Text("Donage"),
+                                          ),
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            borderRadius:
+                                                const BorderRadius.all(
+                                                    const Radius.circular(20)),
+                                          ),
+                                        ),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                                Icons.shopping_cart_outlined)),
+                                      ],
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Beauty pair swans",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: Text(
+                                            "Women grey regar wish",
+                                            style: TextStyle(fontSize: 10),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: RichText(
+                                            text: const TextSpan(
+                                              children: <TextSpan>[
+                                                TextSpan(
+                                                    text: "₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 214, 210, 210),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 440",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 209, 206, 206),
+                                                      decoration: TextDecoration
+                                                          .lineThrough,
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " ₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromRGBO(
+                                                          158, 158, 158, 1),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 340 ",
+                                                    style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontSize: 12,
+                                                    )),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.share_outlined))
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                      Card(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.fromLTRB(
+                                        2.0, 20, 2, 10),
+                                    child: Image.asset(
+                                      "assets/images/watch.png",
+                                      fit: BoxFit.contain,
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: Row(
+                                      mainAxisAlignment:
+                                          MainAxisAlignment.spaceBetween,
+                                      children: [
+                                        Container(
+                                          child: Padding(
+                                            padding: const EdgeInsets.all(6.0),
+                                            child: Text("Donage"),
+                                          ),
+                                          decoration: BoxDecoration(
+                                            border: Border.all(),
+                                            borderRadius:
+                                                const BorderRadius.all(
+                                                    const Radius.circular(20)),
+                                          ),
+                                        ),
+                                        IconButton(
+                                            onPressed: () {},
+                                            icon: Icon(
+                                                Icons.shopping_cart_outlined)),
+                                      ],
+                                    ),
+                                  )
+                                ],
+                              ),
+                            ),
+                            Container(
+                              width: MediaQuery.of(context).size.width / 2.2,
+                              child: Row(
+                                mainAxisAlignment:
+                                    MainAxisAlignment.spaceEvenly,
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.all(4.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          "Beauty pair swans",
+                                          style: TextStyle(
+                                              fontSize: 12,
+                                              fontWeight: FontWeight.bold),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: Text(
+                                            "Women grey regar wish",
+                                            style: TextStyle(fontSize: 10),
+                                          ),
+                                        ),
+                                        Padding(
+                                          padding: const EdgeInsets.fromLTRB(
+                                              0, 4, 0, 0),
+                                          child: RichText(
+                                            text: const TextSpan(
+                                              children: <TextSpan>[
+                                                TextSpan(
+                                                    text: "₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 214, 210, 210),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 440",
+                                                    style: TextStyle(
+                                                      color: Color.fromARGB(
+                                                          255, 209, 206, 206),
+                                                      decoration: TextDecoration
+                                                          .lineThrough,
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " ₹",
+                                                    style: TextStyle(
+                                                      color: Color.fromRGBO(
+                                                          158, 158, 158, 1),
+                                                      fontSize: 12,
+                                                    )),
+                                                TextSpan(
+                                                    text: " 340 ",
+                                                    style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontSize: 12,
+                                                    )),
+                                              ],
+                                            ),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  IconButton(
+                                      onPressed: () {},
+                                      icon: Icon(Icons.share_outlined))
+                                ],
+                              ),
+                            ),
+                          ],
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+              Container(
+                width: double.infinity,
+                color: Color.fromARGB(255, 243, 231, 245),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text("Sponsor Ads",
+                      style:
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
+                ),
+              ),
+              Container(
+                width: double.infinity,
+                child: Image.asset(
+                  "assets/images/ad.png",
+                  fit: BoxFit.fitWidth,
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.fromLTRB(8, 45, 8, 10),
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: Text(
+                    "Deadly Combos Nearby",
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+                  ),
+                ),
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Card(
+                    child: Column(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.2,
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.fromLTRB(2.0, 20, 2, 10),
+                                child: Image.asset(
+                                  "assets/images/watch.png",
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(6.0),
+                                        child: Text("Donage"),
+                                      ),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(),
+                                        borderRadius: const BorderRadius.all(
+                                            const Radius.circular(20)),
+                                      ),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon:
+                                            Icon(Icons.shopping_cart_outlined)),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.2,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(4.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Beauty pair swans",
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.fromLTRB(0, 4, 0, 0),
+                                      child: Text(
+                                        "Women grey regar wish",
+                                        style: TextStyle(fontSize: 10),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.fromLTRB(0, 4, 0, 0),
+                                      child: RichText(
+                                        text: const TextSpan(
+                                          children: <TextSpan>[
+                                            TextSpan(
+                                                text: "₹",
+                                                style: TextStyle(
+                                                  color: Color.fromARGB(
+                                                      255, 214, 210, 210),
+                                                  fontSize: 12,
+                                                )),
+                                            TextSpan(
+                                                text: " 440",
+                                                style: TextStyle(
+                                                  color: Color.fromARGB(
+                                                      255, 209, 206, 206),
+                                                  decoration: TextDecoration
+                                                      .lineThrough,
+                                                  fontSize: 12,
+                                                )),
+                                            TextSpan(
+                                                text: " ₹",
+                                                style: TextStyle(
+                                                  color: Color.fromRGBO(
+                                                      158, 158, 158, 1),
+                                                  fontSize: 12,
+                                                )),
+                                            TextSpan(
+                                                text: " 340 ",
+                                                style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontSize: 12,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(Icons.share_outlined))
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  Card(
+                    child: Column(
+                      children: [
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.2,
+                          child: Column(
+                            children: [
+                              Padding(
+                                padding:
+                                    const EdgeInsets.fromLTRB(2.0, 20, 2, 10),
+                                child: Image.asset(
+                                  "assets/images/watch.png",
+                                  fit: BoxFit.contain,
+                                ),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.all(10.0),
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceBetween,
+                                  children: [
+                                    Container(
+                                      child: Padding(
+                                        padding: const EdgeInsets.all(6.0),
+                                        child: Text("Donage"),
+                                      ),
+                                      decoration: BoxDecoration(
+                                        border: Border.all(),
+                                        borderRadius: const BorderRadius.all(
+                                            const Radius.circular(20)),
+                                      ),
+                                    ),
+                                    IconButton(
+                                        onPressed: () {},
+                                        icon:
+                                            Icon(Icons.shopping_cart_outlined)),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: MediaQuery.of(context).size.width / 2.2,
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
+                              Padding(
+                                padding: const EdgeInsets.all(4.0),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      "Beauty pair swans",
+                                      style: TextStyle(
+                                          fontSize: 12,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.fromLTRB(0, 4, 0, 0),
+                                      child: Text(
+                                        "Women grey regar wish",
+                                        style: TextStyle(fontSize: 10),
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding:
+                                          const EdgeInsets.fromLTRB(0, 4, 0, 0),
+                                      child: RichText(
+                                        text: const TextSpan(
+                                          children: <TextSpan>[
+                                            TextSpan(
+                                                text: "₹",
+                                                style: TextStyle(
+                                                  color: Color.fromARGB(
+                                                      255, 214, 210, 210),
+                                                  fontSize: 12,
+                                                )),
+                                            TextSpan(
+                                                text: " 440",
+                                                style: TextStyle(
+                                                  color: Color.fromARGB(
+                                                      255, 209, 206, 206),
+                                                  decoration: TextDecoration
+                                                      .lineThrough,
+                                                  fontSize: 12,
+                                                )),
+                                            TextSpan(
+                                                text: " ₹",
+                                                style: TextStyle(
+                                                  color: Color.fromRGBO(
+                                                      158, 158, 158, 1),
+                                                  fontSize: 12,
+                                                )),
+                                            TextSpan(
+                                                text: " 340 ",
+                                                style: TextStyle(
+                                                  color: Colors.black,
+                                                  fontSize: 12,
+                                                )),
+                                          ],
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              IconButton(
+                                  onPressed: () {},
+                                  icon: Icon(Icons.share_outlined))
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ],
+              ),
             ],
           ),
         ),

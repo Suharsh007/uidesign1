@@ -24,18 +24,20 @@ class CustomIndicatorState extends State<CustomIndicator> {
       padding: const EdgeInsets.all(8.0),
       child:
           Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
-        CarouselSlider.builder(
-          itemCount: listPaths.length,
-          options: CarouselOptions(
-              autoPlay: true,
-              onPageChanged: (index, reason) {
-                setState(() {
-                  currentPos = index;
-                });
-              }),
-          itemBuilder: (context, index, i) {
-            return MyImageView(listPaths[index]);
-          },
+        SizedBox(
+          child: CarouselSlider.builder(
+            itemCount: listPaths.length,
+            options: CarouselOptions(
+                autoPlay: true,
+                onPageChanged: (index, reason) {
+                  setState(() {
+                    currentPos = index;
+                  });
+                }),
+            itemBuilder: (context, index, i) {
+              return MyImageView(listPaths[index]);
+            },
+          ),
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -71,9 +73,9 @@ class MyImageView extends StatelessWidget {
     // TODO: implement build
     return Container(
         margin: EdgeInsets.symmetric(horizontal: 10),
-        child: FittedBox(
+        child: Image.asset(
+          imgPath,
           fit: BoxFit.fill,
-          child: Image.asset(imgPath),
         ));
   }
 }
